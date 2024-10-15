@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="media/llanta-png.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>LlanXpress</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl bg-dark navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="media/logo-llanta.jpeg"
+            alt="Llanta logo"
+            class="navbar-brand__logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse border" id="navbarNavDropdown">
+          <ul class="navbar-nav border ms-xl-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="sitios.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                sitios
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="sitios.html#ultimos-productos"
+                    >Ultimos productos</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sitios.html#single-page"
+                    ><i>Single Page</i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="sitios.html#multi-page"
+                    target="_blank"
+                  >
+                    <i>Multi Page</i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="clientes.html">Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comencemos.html">Comencemos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="interesados.html">Interesado</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="pt-5 bg-color">
+      <div class="container">
+        <section class="row">
+          <article class="col-12 text-center">
+            <h1>Interesado</h1>
+            <p class="fs-5">¡Enviame tus comentarios!</p>
+            <p class="fs-5">
+              Para mas informacion puedes contactarme en
+              <a href="mailto:joelprogramweb@gmail.com">
+                joelprogramweb@gmail.com</a
+              >
+            </p>
+          </article>
+          <article class="col-12 col-lg-6">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8168901.624311042!2d-89.19229403454702!3d-1.3435056945128512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902387dda89a4bd5%3A0x9d76af04119c3702!2sEcuador!5e0!3m2!1ses!2sec!4v1725809263492!5m2!1ses!2sec"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </article>
+
+          <article class="col-12 col-lg-6">
+            <form
+              action="https://formsubmit.co/joelprogramweb@gmail.com"
+              method="post"
+            >
+              <div class="mb-3">
+                <label class="form-label" for="name">Nombre:</label>
+                <input
+                  type="text"
+                  placeholder="Nombre"
+                  class="form-control"
+                  name="name"
+                  id="name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  name="email"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="comments" class="form-label">Comentarios:</label>
+                <textarea
+                  id="comments"
+                  name="comments"
+                  class="form-control"
+                  placeholder="Dejanos tus comentarios"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <input type="submit" class="btn btn-success btn-lg" />
+              </div>
+              <input
+                type="hidden"
+                name="_next"
+                value="http://192.168.100.236:5500/Gracias.html"
+              />
+              <input
+                type="hidden"
+                name="_subject"
+                value="Nuevo cliente ! lets go ¡"
+              />
+            </form>
+          </article>
+
+          <article class="col-12 mt-4">
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-caption bg-second-alpha-color">
+                  <article>
+                    <aside class="fs-3">
+                      <p><b>Joel Caicedo</b>,</p>
+                      <p class="d-none d-sm-block">Emprendedor</p>
+                    </aside>
+                    <aside class="d-none d-md-block">
+                      <p>
+                        Un gran visionario trayendo lo ultimo en coches desde el
+                        <b>2004</b>.
+                      </p>
+                      <p>Siempre con el cliente.</p>
+                    </aside>
+                  </article>
+                </div>
+                <div class="carousel-item active">
+                  <img
+                    src="media/autor-uno.jpeg"
+                    class="d-block w-100 object-fit-cover"
+                    alt="autor-1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="media/autor-2.jpeg"
+                    class="d-block w-100 object-fit-cover"
+                    alt="autor-2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="media/autor-3.jpeg"
+                    class="d-block w-100 object-fit-cover"
+                    alt="autor-3"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-dark p-3 sticky-bottom mt-2">
+      <div class="container text-center">
+        <nav class="d-flex justify-content-evenly">
+          <a
+            href="https://www.linkedin.com/in/joel-zambrano-9430ab270/"
+            target="_blank"
+            ><i class="bi bi-linkedin fs-3"></i
+          ></a>
+          <a href="https://www.youtube.com/@joelzambrano4342" target="_blank">
+            <i class="bi bi-youtube fs-3"></i>
+          </a>
+          <a
+            href="https://wa.me/593961206129?text=Hola,%20me%20gustaría%20saber%20más%20información"
+            target="_blank"
+            ><i class="bi bi-whatsapp fs-3"></i>
+          </a>
+        </nav>
+        <small class="text-white">quieres trabajar conmigo:</small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
